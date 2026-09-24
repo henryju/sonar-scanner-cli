@@ -58,6 +58,7 @@ public class Main {
   }
 
   public static void main(String[] args) {
+    // TODO test issue
     Exit exit = new Exit();
     Cli cli = new Cli(exit).parse(args);
     Main main = new Main(exit, cli, new Conf(cli, System.getenv()), new ScannerEngineBootstrapperFactory());
